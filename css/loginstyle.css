@@ -84,7 +84,14 @@ body::before {
     /* background-color: rgba(0, 0, 0, .3); */
 }
 
-.login-form {position: relative; z-index: 2;}
+.login-form {
+    position: relative; 
+    z-index: 2;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #000000b7
+}
 
 /* .login-form > h1 {
     font-size: 70px; 
@@ -100,8 +107,10 @@ body::before {
     text-align: center;
     margin-bottom: 60px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.904);
-    text-shadow: 0px 0px 80px rgba(0, 0, 0), 0px 0px 40px rgb(0, 0, 0), 0px 0px 10px rgb(255, 255, 255);
+    color: #5b00d3;
+    /* text-shadow: 0px 0px 80px rgba(0, 0, 0), 0px 0px 40px rgb(0, 0, 0), 0px 0px 10px rgb(255, 255, 255); */
+
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
     caret-color: #cbcbcb;
     outline: none;
 }
@@ -165,20 +174,23 @@ body::before {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #999;
-    font-size: 18px; color: rgba(255, 255, 255, 0.801);
+    font-size: 18px; color: rgba(46, 46, 46, 0.801);
+    font-weight: bold;
     outline: none;
 }
 
 .int-area label {
     position: absolute; left: 10px; top: 15px;
-    font-size: 18px; color: #999;
+    font-size: 18px; color: rgb(134, 134, 134);
+    font-weight: var(--font-medium);
     transition: all .5s ease;
 }
 
 .int-area input:focus + label,
 .int-area input:valid + label {
     top: -2px;
-    font-size: 13px; color: #ffffff;
+    font-size: 13px; color: var(--first-color-alt);
+    font-weight: var(--font-medium);
 }
 
 .btn-area {margin-top: 30px;}
@@ -198,9 +210,12 @@ body::before {
     width: 100%;
     height: 50px;
     padding: 15px 10px;
+    margin-top: 20px;
     font-size: 20px;
+    font-weight: var(--font-semi-bold);
+
     cursor: pointer;
-    background: rgba(97, 51, 109, 0.041);
+    background: var(--first-color);
     border: none;
     border-radius: 25px;
     color: #fff;
@@ -214,7 +229,7 @@ body::before {
 .btn-area button:hover{
     /* box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, .3),
     inset 7px 7px 20px 0 rgba(0, 0, 0, 0.5); */
-    background: rgba(255, 255, 255, 0.164);
+    background: var(--first-color-lighter);
 
 }
 
@@ -229,10 +244,10 @@ body::before {
 }
 
 .caption_items:not(:last-child){
-    border-right: 1px solid rgba(255, 255, 255, 0.418);
+    border-right: 1px solid rgba(114, 114, 114, 0.418);
 }
 
 .caption a {
-    font-size: 15px; color: rgba(255, 255, 255, 0.582);
+    font-size: 15px; color: rgb(66, 66, 66);
     text-decoration: none;
 }
