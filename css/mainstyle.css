@@ -630,7 +630,7 @@ img {
 /*==================== SERVICES ====================*/
 .services__container {
   gap: 1.5rem;
-  grid-template-columns: repeat();
+  /* grid-template-columns: repeat(); */
 }
 
 .services__content {
