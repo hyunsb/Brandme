@@ -1207,3 +1207,13 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+.empty {
+  height: 650px;
+}
+
+.empty__container {
+  row-gap: 0;
+  height: 100%;
+}
