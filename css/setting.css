@@ -309,8 +309,6 @@ img {
 
 /*==================== HOME ====================*/
 .home__container {
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 1.5rem;
   align-items: center;
   padding: 0 70px;
 }
@@ -319,9 +317,21 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
+.home__link {
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: .5rem;
+}
 
+.home__items:not(:last-child){
+  margin-bottom: var(--mb-1-5);
+}
 
-
+.homelink__inputs {
+  display: flex;
+}
+.span__item {
+  display: flex;
+}
 
 
 
