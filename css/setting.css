@@ -357,6 +357,13 @@ img {
   padding-bottom: 70px;
 }
 
+.about__input {
+ grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
 
 /*==================== SKILLS ====================*/
 .skills__input {
